@@ -4,115 +4,258 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#faf6ef">
-<title>給郭小姐的小合盤</title>
+<title>郭小姐的五行合盤</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="page">
 
-  <header class="hero">
-    <p class="hero-eyebrow">一個小小的合盤</p>
-    <h1 class="hero-title">我們的五行</h1>
-    <p class="hero-sub">看到一個八字 app 就順手測了一下<br>結果發現我們意外地搭，所以做了這頁</p>
+  <header class="hero reveal">
+    <div class="hero-ornament" aria-hidden="true"><span></span><i>五行</i><span></span></div>
+    <h1 class="hero-title">郭小姐的五行合盤</h1>
+    <p class="hero-sub">
+      用一個八字 app 隨手測了妳和邱先生的盤，<br>
+      結果好到我覺得應該做成一頁讓妳自己看看。
+    </p>
   </header>
 
+  <!-- ============ 兩人的盤 ============ -->
   <section class="cards">
 
-    <article class="card card--her">
+    <article class="card card--her reveal">
       <div class="card-head">
         <span class="card-tag">妳</span>
         <h2 class="card-name">郭小姐</h2>
-        <p class="card-day">己丑日生・陰土・如田園之土</p>
+        <p class="card-day">己丑日生 · 陰土 · 如田園之土</p>
       </div>
 
       <div class="card-meta">
-        <div class="meta-row"><span class="meta-k">格局</span><span class="meta-v">傷官格・傷官泄秀</span></div>
+        <div class="meta-row"><span class="meta-k">格局</span><span class="meta-v">傷官格 · 傷官泄秀</span></div>
         <div class="meta-row"><span class="meta-k">類型</span><span class="meta-v">均衡型</span></div>
-        <div class="meta-row"><span class="meta-k">喜用</span><span class="meta-v">木・金・水</span></div>
+        <div class="meta-row"><span class="meta-k">喜用</span><span class="meta-v">木 · 金 · 水</span></div>
       </div>
 
       <ul class="wuxing">
-        <li style="--p:15"><span class="w-name w-fire">火</span><span class="w-bar"><span class="w-fill w-fire-bg"></span></span><span class="w-pct">15%</span></li>
-        <li style="--p:29"><span class="w-name w-earth">土</span><span class="w-bar"><span class="w-fill w-earth-bg"></span></span><span class="w-pct">29% <em>日主</em></span></li>
         <li style="--p:38"><span class="w-name w-metal">金</span><span class="w-bar"><span class="w-fill w-metal-bg"></span></span><span class="w-pct">38%</span></li>
+        <li style="--p:29"><span class="w-name w-earth">土</span><span class="w-bar"><span class="w-fill w-earth-bg"></span></span><span class="w-pct">29% <em>日主</em></span></li>
+        <li style="--p:15"><span class="w-name w-fire">火</span><span class="w-bar"><span class="w-fill w-fire-bg"></span></span><span class="w-pct">15%</span></li>
         <li style="--p:8"><span class="w-name w-water">水</span><span class="w-bar"><span class="w-fill w-water-bg"></span></span><span class="w-pct">8%</span></li>
         <li style="--p:8"><span class="w-name w-wood">木</span><span class="w-bar"><span class="w-fill w-wood-bg"></span></span><span class="w-pct">8%</span></li>
       </ul>
 
-      <p class="card-note">頭腦聰明、對世界保持好奇心，如果把心思花在某項技能或藝術，往往會有自己的成就。</p>
+      <p class="card-note">
+        「秀氣之格。頭腦聰明，對世界保持好奇心，若著力培養自身藝術才能或某項專業技能，往往能有所成就。」<br>
+        <span class="note-aside">—— app 對妳的原文評語，我覺得寫得很準。</span>
+      </p>
     </article>
 
-    <article class="card card--mine">
+    <article class="card card--him reveal">
       <div class="card-head">
-        <span class="card-tag">我</span>
-        <h2 class="card-name">我自己</h2>
-        <p class="card-day">戊戌日生・陽土・如大地之土</p>
+        <span class="card-tag">他</span>
+        <h2 class="card-name">邱先生</h2>
+        <p class="card-day">戊戌日生 · 陽土 · 如大地之土</p>
       </div>
 
       <div class="card-meta">
-        <div class="meta-row"><span class="meta-k">格局</span><span class="meta-v">七殺格・殺印相生</span></div>
+        <div class="meta-row"><span class="meta-k">格局</span><span class="meta-v">七殺格 · 殺印相生</span></div>
         <div class="meta-row"><span class="meta-k">外格</span><span class="meta-v">魁罡格</span></div>
         <div class="meta-row"><span class="meta-k">類型</span><span class="meta-v">偏弱型</span></div>
-        <div class="meta-row"><span class="meta-k">喜用</span><span class="meta-v">火・土</span></div>
+        <div class="meta-row"><span class="meta-k">喜用</span><span class="meta-v">火 · 土</span></div>
       </div>
 
       <ul class="wuxing">
+        <li style="--p:31"><span class="w-name w-wood">木</span><span class="w-bar"><span class="w-fill w-wood-bg"></span></span><span class="w-pct">31%</span></li>
         <li style="--p:24"><span class="w-name w-fire">火</span><span class="w-bar"><span class="w-fill w-fire-bg"></span></span><span class="w-pct">24%</span></li>
         <li style="--p:24"><span class="w-name w-earth">土</span><span class="w-bar"><span class="w-fill w-earth-bg"></span></span><span class="w-pct">24% <em>日主</em></span></li>
-        <li style="--p:5"><span class="w-name w-metal">金</span><span class="w-bar"><span class="w-fill w-metal-bg"></span></span><span class="w-pct">5%</span></li>
         <li style="--p:14"><span class="w-name w-water">水</span><span class="w-bar"><span class="w-fill w-water-bg"></span></span><span class="w-pct">14%</span></li>
-        <li style="--p:31"><span class="w-name w-wood">木</span><span class="w-bar"><span class="w-fill w-wood-bg"></span></span><span class="w-pct">31%</span></li>
+        <li style="--p:5"><span class="w-name w-metal">金</span><span class="w-bar"><span class="w-fill w-metal-bg"></span></span><span class="w-pct">5%</span></li>
       </ul>
 
-      <p class="card-note">適合走「成事」的路，但本命土偏弱，需要靠火與土把根基顧好。</p>
+      <p class="card-note">
+        「七殺格自古誕生了很多權貴中人，若天時地利人和，很難不闖出點兒大名堂。」<br>
+        <span class="note-aside">—— 簡單說：有肩膀、能扛事的類型。</span>
+      </p>
     </article>
 
   </section>
 
-  <section class="combine">
-    <h2 class="section-title">合起來看</h2>
+  <!-- ============ 重疊雷達圖 ============ -->
+  <section class="radar-sec reveal">
+    <h2 class="section-title">兩張盤疊在一起</h2>
+    <p class="radar-lead">妳往哪邊凹進去，他就往哪邊凸出來。</p>
+
+    <figure class="radar">
+      <svg viewBox="0 0 300 296" role="img" aria-label="兩人五行雷達圖">
+        <!-- grid rings: 10 / 20 / 30 / 40% -->
+        <g class="radar-grid">
+          <polygon points="150,40 254.6,116 214.7,239 85.3,239 45.4,116"/>
+          <polygon points="150,67.5 228.5,124.5 198.5,216.7 101.5,216.7 71.5,124.5"/>
+          <polygon points="150,95 202.3,133 182.3,194.5 117.7,194.5 97.7,133"/>
+          <polygon points="150,122.5 176.2,141.5 166.2,172.2 133.8,172.2 123.8,141.5"/>
+          <line x1="150" y1="150" x2="150" y2="40"/>
+          <line x1="150" y1="150" x2="254.6" y2="116"/>
+          <line x1="150" y1="150" x2="214.7" y2="239"/>
+          <line x1="150" y1="150" x2="85.3" y2="239"/>
+          <line x1="150" y1="150" x2="45.4" y2="116"/>
+        </g>
+        <!-- him -->
+        <polygon class="radar-him" points="150,84 212.8,129.6 158.1,161.1 127.4,181.1 68.9,123.7"/>
+        <!-- her -->
+        <polygon class="radar-her" points="150,108.75 225.8,125.4 211.4,234.5 137.1,167.8 129.1,143.2"/>
+        <!-- labels -->
+        <g class="radar-label">
+          <text x="150" y="26" text-anchor="middle" class="w-fire">火</text>
+          <text x="272" y="116" text-anchor="middle" class="w-earth">土</text>
+          <text x="223" y="262" text-anchor="middle" class="w-metal">金</text>
+          <text x="77" y="262" text-anchor="middle" class="w-water">水</text>
+          <text x="28" y="116" text-anchor="middle" class="w-wood">木</text>
+        </g>
+      </svg>
+      <figcaption class="radar-legend">
+        <span class="lg lg-her">郭小姐</span>
+        <span class="lg lg-him">邱先生</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ 合盤分析 ============ -->
+  <section class="combine reveal">
+    <h2 class="section-title">合盤怎麼看</h2>
 
     <div class="combine-block">
-      <h3 class="combine-h">一、戊己同根，剛好一陽一陰</h3>
-      <p>妳是己土，田園之土；我是戊土，大地之土。命理上叫「戊己合」，是天干裡很經典的陰陽配對。底色相近、節奏類似，是那種不用刻意找話題，安靜也能舒服的組合。</p>
+      <h3 class="combine-h"><span class="num">壹</span>田園之土，遇上大地之土</h3>
+      <p>
+        妳是己土，像一畝養得起萬物的田園；他是戊土，像一片承載一切的大地。
+        同為土命、一陰一陽，命理上講「陰陽相濟」——
+        土命的人重感情、念舊、慢熟但穩，兩個土碰在一起，
+        不是那種一見面就煙花四射的組合，而是<b>待在一起會越來越安心</b>的那種。
+        田園本來就該長在大地上。
+      </p>
     </div>
 
     <div class="combine-block">
-      <h3 class="combine-h">二、五行互補，剛好把缺的補給對方</h3>
+      <h3 class="combine-h"><span class="num">貳</span>妳的正緣星，剛好是他最旺的一行</h3>
+      <p>
+        八字裡，女命的「正官星」代表正緣。妳的日主是己土，木剋土，
+        所以<b>木就是妳的官星</b>——妳自己的盤裡木只有 8%，是最少的兩行之一。
+      </p>
+      <p>
+        然後看他的盤：<b>木 31%，全盤最旺</b>。
+        妳命裡最稀缺的那顆星，剛好是他最豐沛的東西。
+      </p>
+    </div>
+
+    <div class="combine-block">
+      <h3 class="combine-h"><span class="num">參</span>反過來，妳也是他的</h3>
+      <p>
+        男命看正緣看「財星」。他是戊土，土剋水，<b>水就是他的財星</b>——
+        他自己水只有 14%，不算多。
+      </p>
+      <p>
+        而妳全盤最旺的是金，38%。五行相生裡<b>金生水</b>：
+        妳最強的那一行，會源源不絕地生出他命裡的緣分星。
+        一個補官、一個生財——<b>互為對方的貴人</b>，這在合盤裡是很漂亮的對應。
+      </p>
+    </div>
+
+    <div class="combine-block">
+      <h3 class="combine-h"><span class="num">肆</span>喜用神，幾乎是交叉互補</h3>
       <div class="match-grid">
         <div class="match-item">
           <span class="match-el w-wood">木</span>
-          <p><b>我 31% → 妳 8%</b><br>妳的喜用裡有木，而我的木剛好旺。</p>
+          <p><b>妳喜木 · 妳 8% ／ 他 31%</b><br>妳三個喜用之首，他直接整盤端給妳。</p>
+        </div>
+        <div class="match-item">
+          <span class="match-el w-water">水</span>
+          <p><b>妳喜水 · 妳 8% ／ 他 14%</b><br>妳偏少的水，他也比妳多，再補一行。</p>
         </div>
         <div class="match-item">
           <span class="match-el w-earth">土</span>
-          <p><b>妳 29% → 我 24%</b><br>我偏弱的土，妳的厚實土剛好幫得上。</p>
+          <p><b>他喜土 · 他 24% ／ 妳 29%</b><br>他日主偏弱，妳的厚實己土剛好給他靠。</p>
         </div>
         <div class="match-item">
           <span class="match-el w-fire">火</span>
-          <p><b>火都不少</b><br>兩個人都有火，氣場不會悶。</p>
-        </div>
-        <div class="match-item">
-          <span class="match-el w-metal">金</span>
-          <p><b>妳 38% / 我 5%</b><br>妳金多、傷官秀氣；我的火剛好調節，不會讓妳的金太鋒。</p>
+          <p><b>他喜火 · 妳 15% ＋ 他 24%</b><br>兩個人的火加在一起，爐子不會冷。</p>
         </div>
       </div>
+      <p class="match-after">
+        妳缺的他多、他缺的妳多——疊起來的雷達圖會接近一個圓，
+        這就是「在一起比各自一個人完整」的盤型。
+      </p>
     </div>
 
     <div class="combine-block">
-      <h3 class="combine-h">三、總結</h3>
-      <p>不是那種一見鍾情、轟轟烈烈的盤，而是「會慢慢變得越來越自然」的盤。互補的部分夠多，底層性格又靠近，所以越相處越穩。</p>
+      <h3 class="combine-h"><span class="num">伍</span>性格上：聰明的妳，能扛事的他</h3>
+      <p>
+        妳是<b>傷官泄秀</b>：聰明、有才氣、對世界永遠保持好奇，
+        想法快、眼光準，鋒芒是藏不住的那種。
+      </p>
+      <p>
+        他是<b>殺印相生加魁罡</b>：有決斷力、責任感重、能把事情扛起來做完。
+      </p>
+      <p>
+        更有趣的是：他命裡的七殺是木，而妳的傷官是金，<b>金剋木</b>——
+        命理上叫「傷官駕殺」，意思是妳的聰慧剛好能讓他的衝勁用在對的地方，
+        而他的穩重剛好接得住妳的鋒芒。
+        <b>妳負責想得遠，他負責走得穩</b>，這個分工是盤面自己長出來的。
+      </p>
+    </div>
+
+    <div class="combine-block">
+      <h3 class="combine-h"><span class="num">陸</span>順便一提的幸運對照</h3>
+      <div class="lucky">
+        <div class="lucky-row lucky-head">
+          <span></span><span>郭小姐</span><span>邱先生</span>
+        </div>
+        <div class="lucky-row">
+          <span class="lucky-k">幸運色</span>
+          <span><i class="dot" style="--c:#7fb392"></i><i class="dot" style="--c:#f3efe6"></i><i class="dot" style="--c:#3f6491"></i></span>
+          <span><i class="dot" style="--c:#d96b4f"></i><i class="dot" style="--c:#e6c25a"></i></span>
+        </div>
+        <div class="lucky-row">
+          <span class="lucky-k">幸運方位</span>
+          <span>東北 · 西北</span>
+          <span>家鄉 · 正南</span>
+        </div>
+        <div class="lucky-row">
+          <span class="lucky-k">幸運數字</span>
+          <span>41 · 57 · 59</span>
+          <span>72 · 5</span>
+        </div>
+      </div>
+      <p class="match-after">
+        妳的幸運色是青綠與藍白，他的是紅與黃——剛好把五行的顏色湊滿一輪。
+      </p>
+    </div>
+
+    <div class="verdict">
+      <p class="verdict-line">所以結論是——</p>
+      <p class="verdict-main">
+        這不是煙火型的盤，是爐火型的盤。<br>
+        不靠瞬間的燦爛，靠的是慢慢加溫、越燒越穩，<br>
+        而且妳缺的剛好他都有。
+      </p>
+      <span class="seal" aria-hidden="true">合</span>
     </div>
   </section>
 
-  <footer class="foot">
-    <p>就只是個 app 隨手測的結果，不用太認真。</p>
-    <p class="foot-sign">給郭小姐 · 2026</p>
+  <footer class="foot reveal">
+    <p>以上來自一個八字 app 的隨手一測，姑且聽之，開心最重要。</p>
+    <p class="foot-sign">邱先生 敬上 · 2026</p>
   </footer>
 
 </main>
+
+<script>
+const io = new IntersectionObserver(entries => {
+  for (const e of entries) {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal, .card, .radar-sec').forEach(el => io.observe(el));
+</script>
 </body>
 </html>
