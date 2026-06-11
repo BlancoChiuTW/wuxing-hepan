@@ -92,6 +92,12 @@ body {
   letter-spacing: 0.08em;
   margin: 0 0 16px;
   color: var(--ink);
+  line-height: 1.5;
+}
+.title-br { display: none; }
+@media (max-width: 540px) {
+  .title-br { display: block; }
+  .hero-title { font-size: 29px; }
 }
 .hero-sub {
   margin: 0;
